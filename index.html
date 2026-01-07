@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavithran | Personal Profile</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #6366f1, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tight">PAVITHRAN<span class="text-indigo-600">.IN</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-indigo-600 transition">Home</a>
+                <a href="#bio" class="hover:text-indigo-600 transition">Bio</a>
+                <a href="#interests" class="hover:text-indigo-600 transition">Interests</a>
+                <a href="#links" class="hover:text-indigo-600 transition">Links</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20 px-6">
+        <div class="max-w-5xl mx-auto text-center md:text-left grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Hello, I'm <span class="gradient-text">Pavithran.</span>
+                </h1>
+                <p class="text-slate-600 text-lg md:text-xl mb-8 max-w-lg leading-relaxed">
+                    A curious mind based in India. I enjoy the simple things in life: good code, thoughtful design, and a quiet cup of coffee. This is my small corner of the internet.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                    <a href="#bio" class="bg-indigo-600 text-white px-8 py-3 rounded-2xl font-medium hover:bg-indigo-700 transition shadow-lg shadow-indigo-100">Know more</a>
+                    <a href="#links" class="bg-white border border-slate-200 px-8 py-3 rounded-2xl font-medium hover:bg-slate-50 transition">Find me online</a>
+                </div>
+            </div>
+            <div class="relative flex justify-center">
+                <!-- Profile Image Placeholder -->
+                <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-tr from-indigo-100 to-purple-100 rounded-[3rem] shadow-inner flex items-center justify-center relative overflow-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-32 w-32 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section id="bio" class="py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8 text-center">A little about me</h2>
+            <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
+                <p>
+                    I've always been fascinated by how things work. Whether it's the logic behind a piece of software or the mechanics of a physical object, I find joy in understanding the "why" and the "how."
+                </p>
+                <p>
+                    Unlike most of the web today, this site isn't meant to sell you anything. It's simply a digital home where I can share my thoughts, document my learning journey, and keep track of things that inspire me. 
+                </p>
+                <p>
+                    When I'm not in front of a screen, you'll likely find me reading, traveling, or experimenting with new hobbies. I believe in continuous growth and staying curious about the world around us.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="py-24 bg-slate-50 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Currently into</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Interest 1 -->
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Reading</h3>
+                    <p class="text-slate-500 text-sm">Mainly non-fiction, philosophy, and science fiction. Always looking for a book that challenges my perspective.</p>
+                </div>
+                <!-- Interest 2 -->
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Technology</h3>
+                    <p class="text-slate-500 text-sm">Exploring new web frameworks and the potential of AI to augment human creativity.</p>
+                </div>
+                <!-- Interest 3 -->
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-pink-50 rounded-xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Travel</h3>
+                    <p class="text-slate-500 text-sm">Capturing moments through a lens and experiencing cultures that are different from my own.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Links/Social Section -->
+    <section id="links" class="py-24 px-6 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-600">Find me</h2>
+            <p class="text-slate-500 mb-12">Feel free to connect or drop a message.</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href="mailto:hello@pavithran.in" class="p-6 bg-white border border-slate-200 rounded-2xl hover:border-indigo-300 hover:shadow-md transition group flex items-center justify-center space-x-3">
+                    <span class="font-medium">Email Me</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-400 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+                <a href="#" class="p-6 bg-white border border-slate-200 rounded-2xl hover:border-indigo-300 hover:shadow-md transition group flex items-center justify-center space-x-3">
+                    <span class="font-medium">Instagram</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-400 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+                <a href="#" class="p-6 bg-white border border-slate-200 rounded-2xl hover:border-indigo-300 hover:shadow-md transition group flex items-center justify-center space-x-3">
+                    <span class="font-medium">GitHub</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-400 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+                <a href="#" class="p-6 bg-white border border-slate-200 rounded-2xl hover:border-indigo-300 hover:shadow-md transition group flex items-center justify-center space-x-3">
+                    <span class="font-medium">Twitter / X</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-400 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="mt-32 text-slate-400 text-sm italic">
+                &copy; 2026 Pavithran — pavithran.in
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
