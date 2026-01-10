@@ -3,299 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pavithran Ganesan | Cybersecurity Profile</title>
+    <title>Pavithran Ganesan | OT Cybersecurity Expert</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .gradient-text {
-            background: linear-gradient(90deg, #0ea5e9, #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .glass-nav {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-        }
+        body { font-family: 'Space Grotesk', sans-serif; transition: background-color 0.3s, color 0.3s; }
+        .dark { background: black; color: white; }
+        .light { background: white; color: #1e293b; }
+        .light nav { background: rgba(255, 255, 255, 0.95); border-color: rgba(0, 0, 0, 0.1); }
+        .light .bg-white\/5 { background: rgba(0, 0, 0, 0.05); }
+        .light .border-white\/10 { border-color: rgba(0, 0, 0, 0.15); }
+        .light .text-gray-400 { color: #64748b; }
+        .light .text-gray-300 { color: #475569; }
+        .light section { background: white !important; }
+        .gradient-text { background: linear-gradient(120deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glow { box-shadow: 0 0 40px rgba(102, 126, 234, 0.3); }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
+        .float { animation: float 6s ease-in-out infinite; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="dark">
 
-    <nav class="fixed w-full z-50 glass-nav">
+    <nav class="fixed w-full z-50 backdrop-blur-xl border-b border-white/10 bg-black/30">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-bold tracking-tight">PAVITHRAN<span class="text-sky-500">.IN</span></div>
-            <div class="hidden md:flex space-x-8 text-sm font-medium">
-                <a href="#home" class="hover:text-sky-600 transition">Home</a>
-                <a href="#about" class="hover:text-sky-600 transition">About</a>
-                <a href="#experience" class="hover:text-sky-600 transition">Experience</a>
-                <a href="#skills" class="hover:text-sky-600 transition">Skills</a>
-                <a href="#writing" class="hover:text-sky-600 transition">Writing</a>
-                <a href="#contact" class="hover:text-sky-600 transition">Contact</a>
+            <div class="flex items-center">
+                <img src="badges/logo.png" alt="PG shield logo" class="h-14 w-14 object-contain">
+            </div>
+            <button onclick="toggleMenu()" class="md:hidden text-2xl">☰</button>
+            <div id="menu" class="hidden md:flex items-center gap-6 text-sm">
+                <a href="#home" class="pb-1 text-gray-300 border-b border-transparent hover:text-white hover:border-purple-400 transition">Home</a>
+                <a href="#about" class="pb-1 text-gray-300 border-b border-transparent hover:text-white hover:border-purple-400 transition">About</a>
+                <a href="#experience" class="pb-1 text-gray-300 border-b border-transparent hover:text-white hover:border-purple-400 transition">Focus</a>
+                <a href="#skills" class="pb-1 text-gray-300 border-b border-transparent hover:text-white hover:border-purple-400 transition">Skills</a>
+                <a href="#projects" class="pb-1 text-gray-300 border-b border-transparent hover:text-white hover:border-purple-400 transition">Projects</a>
+                <a href="#writing" class="pb-1 text-gray-300 border-b border-transparent hover:text-white hover:border-purple-400 transition">Writing</a>
+                <a href="#education" class="pb-1 text-gray-300 border-b border-transparent hover:text-white hover:border-purple-400 transition">Education</a>
+                <a href="#contact" class="pb-1 text-gray-300 border-b border-transparent hover:text-white hover:border-purple-400 transition">Contact</a>
+                <button onclick="toggleTheme()" id="themeBtn" class="px-3 py-2 rounded-md border border-white/20 hover:bg-white/10 transition font-semibold">☀️ Light</button>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="min-h-screen flex items-center pt-24 px-6">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <p class="text-sm uppercase tracking-[0.3em] text-slate-400 mb-4">Cybersecurity Research & Consulting</p>
-                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                    Hi, I'm <span class="gradient-text">Pavithran Ganesan</span>.
+    <section id="home" class="pt-20 pb-10 flex items-center px-6 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-[auto,1fr] gap-8 items-center relative z-10 mt-12">
+            <div class="order-1 md:order-2">
+                <div class="text-purple-400 text-xs md:text-sm font-semibold mb-4 tracking-widest">OT CYBERSECURITY EXPERT</div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Pavithran<br><span class="gradient-text">Ganesan</span>
                 </h1>
-                <p class="text-slate-600 text-lg md:text-xl mb-8 leading-relaxed">
-                    Technical Expert in OT cybersecurity with 12+ years across industrial automation and cybersecurity. I help organizations strengthen resilience through research, consulting, and hands-on training.
+                <p class="text-gray-300 text-base md:text-lg mb-8 leading-relaxed">
+                    Securing critical infrastructure with 12+ years of expertise in industrial automation and OT cybersecurity.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#experience" class="bg-sky-500 text-white px-8 py-3 rounded-2xl font-medium hover:bg-sky-600 transition shadow-lg shadow-sky-100">View experience</a>
-                    <a href="#contact" class="bg-white border border-slate-200 px-8 py-3 rounded-2xl font-medium hover:bg-slate-50 transition">Get in touch</a>
+                    <a href="#contact" class="bg-gradient-to-r from-purple-600 to-blue-600 px-8 py-4 rounded-full font-semibold hover:shadow-2xl hover:shadow-purple-500/50 transition text-center text-white">Let's Connect</a>
+                    <a href="#experience" class="border border-white/20 px-8 py-4 rounded-full font-semibold hover:bg-white/5 transition text-center">Explore Focus</a>
                 </div>
             </div>
-            <div class="relative flex justify-center">
-                <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-tr from-sky-100 to-violet-100 rounded-[3rem] shadow-inner flex items-center justify-center">
-                    <div class="text-center">
-                        <p class="text-4xl font-bold text-slate-700">12+</p>
-                        <p class="text-slate-500">Years in OT & Cybersecurity</p>
+            <div class="relative float order-2 md:order-1">
+                <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl blur-3xl opacity-20"></div>
+                <img src="badges/mypic.png" alt="Pavithran Ganesan" class="relative w-full max-w-[200px] md:max-w-[240px] rounded-3xl glow">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 gradient-text">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        With over twelve years in industrial automation and cybersecurity, I've contributed to global projects addressing the unique challenges of securing complex systems.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                            <span class="text-gray-300">Delivered OT Security Training for public and private sectors</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">Cybersecurity Training Program for Power Officials, an initiative by Ministry of Power, India</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                            <span class="text-gray-300">Designed a hybrid OT security hackathon at AISS2025</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">Led a cybersecurity lab initiative focused on applied research</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                            <span class="text-gray-300">Participated in Dragos CTF 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6">
+                        <div class="text-purple-400 text-sm font-semibold mb-2">CURRENT ROLE</div>
+                        <div class="text-xl font-semibold">Technical Expert</div>
+                        <div class="text-gray-300">Cybersecurity Research & Advisory (global industrial technology firm)</div>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6">
+                        <div class="text-blue-400 text-sm font-semibold mb-2">LOCATION</div>
+                        <div class="text-xl font-semibold">India</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-24 bg-white">
-        <div class="max-w-3xl mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-6 text-center">About</h2>
-            <p class="text-slate-600 text-lg leading-relaxed mb-6">
-                With over twelve years in industrial automation and cybersecurity, I’ve contributed to global projects addressing the unique challenges of securing complex systems. I’m driven by a commitment to advancing OT security and support organizations through research, consulting, and tailored strategies.
+    <section id="experience" class="py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Focus Areas</h2>
+            <p class="text-gray-300 text-lg leading-relaxed mb-10 max-w-3xl">
+                I work across OT/ICS security with an emphasis on resilient industrial design, practical governance,
+                and knowledge sharing for real-world operations.
             </p>
-            <div class="grid sm:grid-cols-2 gap-6 text-sm text-slate-500">
-                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6">
-                    <p class="font-semibold text-slate-700 mb-1">Current Role</p>
-                    <p>Technical Expert - Cybersecurity Research & Consulting @ Siemens</p>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition">
+                    <div class="text-purple-400 text-sm font-semibold mb-2">Architecture and Resilience</div>
+                    <div class="text-gray-300 text-sm md:text-base">Defense-in-depth, segmentation, and secure industrial design.</div>
                 </div>
-                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6">
-                    <p class="font-semibold text-slate-700 mb-1">Location</p>
-                    <p>Bengaluru, Karnataka, India</p>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition">
+                    <div class="text-blue-400 text-sm font-semibold mb-2">Governance and Risk</div>
+                    <div class="text-gray-300 text-sm md:text-base">Standards-aligned security strategy and risk-informed decisions.</div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="py-24 bg-slate-50 px-6">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center">Experience</h2>
-            <div class="space-y-8">
-                <div class="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                        <div>
-                            <h3 class="text-xl font-semibold">Technical Expert - Cybersecurity Research & Consulting</h3>
-                            <p class="text-slate-500">Siemens · Oct 2024 - Present</p>
-                        </div>
-                        <span class="px-4 py-1 bg-sky-50 text-sky-600 rounded-full text-sm">Bengaluru, India</span>
-                    </div>
-                    <ul class="mt-4 text-slate-600 list-disc list-inside space-y-2">
-                        <li>Lead OT cybersecurity research and consulting for global projects.</li>
-                        <li>Drive VAPT engagements, IEC 62443 risk assessments, and site audits.</li>
-                        <li>Design and deliver OT security training content.</li>
-                    </ul>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition">
+                    <div class="text-purple-400 text-sm font-semibold mb-2">Security Enablement</div>
+                    <div class="text-gray-300 text-sm md:text-base">Training, workshops, and playbooks for teams in critical environments.</div>
                 </div>
-                <div class="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                        <div>
-                            <h3 class="text-xl font-semibold">Lead Engineer - Cybersecurity Research & Consulting</h3>
-                            <p class="text-slate-500">Siemens · Jun 2023 - Nov 2024</p>
-                        </div>
-                        <span class="px-4 py-1 bg-sky-50 text-sky-600 rounded-full text-sm">Bengaluru, India</span>
-                    </div>
-                    <ul class="mt-4 text-slate-600 list-disc list-inside space-y-2">
-                        <li>Delivered cybersecurity consulting and compliance assessments for OT environments.</li>
-                        <li>Collaborated with cross-functional teams to align security strategies with operational needs.</li>
-                    </ul>
-                </div>
-                <div class="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                        <div>
-                            <h3 class="text-xl font-semibold">Technical Support Specialist</h3>
-                            <p class="text-slate-500">ABB · Jul 2020 - Jun 2023</p>
-                        </div>
-                        <span class="px-4 py-1 bg-sky-50 text-sky-600 rounded-full text-sm">Bengaluru, India</span>
-                    </div>
-                    <ul class="mt-4 text-slate-600 list-disc list-inside space-y-2">
-                        <li>SME for cybersecurity in solution engineering and tender management.</li>
-                        <li>Designed IEC 62443 aligned system architectures for global clients.</li>
-                        <li>Supported sales and execution teams with proposals and risk reviews.</li>
-                    </ul>
-                </div>
-                <div class="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                        <div>
-                            <h3 class="text-xl font-semibold">Technical Support Specialist & Project Manager</h3>
-                            <p class="text-slate-500">Siemens · Jun 2018 - Jun 2020</p>
-                        </div>
-                        <span class="px-4 py-1 bg-sky-50 text-sky-600 rounded-full text-sm">Bengaluru, India</span>
-                    </div>
-                    <ul class="mt-4 text-slate-600 list-disc list-inside space-y-2">
-                        <li>Built secure automation and cybersecurity proposals for water and pharma industries.</li>
-                        <li>Managed project scope, stakeholder communication, and risk management.</li>
-                        <li>Delivered cybersecurity guidance during customer technical clarifications.</li>
-                    </ul>
-                </div>
-                <div class="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                        <div>
-                            <h3 class="text-xl font-semibold">Instrumentation & Control Engineer</h3>
-                            <p class="text-slate-500">VA Tech Wabag Ltd. · Jun 2012 - May 2018</p>
-                        </div>
-                        <span class="px-4 py-1 bg-sky-50 text-sky-600 rounded-full text-sm">Chennai, India</span>
-                    </div>
-                    <ul class="mt-4 text-slate-600 list-disc list-inside space-y-2">
-                        <li>Commissioned large-scale desalination and wastewater management projects.</li>
-                        <li>Led control & instrumentation proposal engineering for major plants.</li>
-                    </ul>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition">
+                    <div class="text-blue-400 text-sm font-semibold mb-2">Applied Research</div>
+                    <div class="text-gray-300 text-sm md:text-base">Practical experimentation to validate defenses and improve readiness.</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="py-24 bg-white px-6">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center">Skills & Certifications</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-8">
-                    <h3 class="text-xl font-semibold mb-4">Top Skills</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-full text-sm">Cybersecurity</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-full text-sm">Ethical Hacking</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-full text-sm">Vulnerability Assessment</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-full text-sm">IEC 62443</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-full text-sm">OT Security</span>
-                    </div>
+    <section id="skills" class="py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 gradient-text">Certifications & Expertise</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-16">
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 text-center hover:border-purple-500/50 transition">
+                    <img src="badges/GICSP.png" alt="GICSP" class="h-24 md:h-32 mx-auto mb-4">
+                    <div class="text-xs md:text-sm text-gray-300">GIAC Industrial Control Systems Professional</div>
                 </div>
-                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-8">
-                    <h3 class="text-xl font-semibold mb-4">Certifications</h3>
-                    <div class="grid gap-4 text-sm text-slate-600">
-                        <div class="flex flex-wrap items-center gap-3">
-                            <img src="https://img.shields.io/badge/Claroty-Implementation_Engineer-0ea5e9?style=for-the-badge" alt="Claroty Implementation Engineer badge">
-                            <span>Issued Oct 2024 · Expires Oct 2026</span>
-                        </div>
-                        <div class="flex flex-wrap items-center gap-3">
-                            <img src="https://img.shields.io/badge/GIAC-GICSP-8b5cf6?style=for-the-badge" alt="GIAC GICSP badge">
-                            <span>Issued Jul 2024 · Expires Jun 2028</span>
-                        </div>
-                        <div class="flex flex-wrap items-center gap-3">
-                            <img src="https://img.shields.io/badge/Microsoft-AZ--500-2563eb?style=for-the-badge" alt="Microsoft Certified Azure Security Engineer Associate badge">
-                            <span>Issued Mar 2024</span>
-                        </div>
-                        <div class="flex flex-wrap items-center gap-3">
-                            <img src="https://img.shields.io/badge/PurpleSynapz-Purple_Range_Training-7c3aed?style=for-the-badge" alt="Purple Range Training badge">
-                            <span>Issued Mar 2024</span>
-                        </div>
-                        <div class="flex flex-wrap items-center gap-3">
-                            <img src="https://img.shields.io/badge/ISA-IEC_62443_Risk_Assessment_Specialist-0f766e?style=for-the-badge" alt="ISA IEC 62443 Risk Assessment Specialist badge">
-                            <span>Issued Sep 2023</span>
-                        </div>
-                        <div class="flex flex-wrap items-center gap-3">
-                            <img src="https://img.shields.io/badge/ISA-IEC_62443_Fundamentals-0f766e?style=for-the-badge" alt="ISA IEC 62443 Fundamentals Specialist badge">
-                            <span>Issued Aug 2023 · Expires Aug 2026</span>
-                        </div>
-                        <div class="flex flex-wrap items-center gap-3">
-                            <img src="https://img.shields.io/badge/EC--Council-CEH-ef4444?style=for-the-badge" alt="Certified Ethical Hacker badge">
-                            <span>Issued May 2023 · Expires May 2026</span>
-                        </div>
-                        <div class="flex flex-wrap items-center gap-3">
-                            <img src="https://img.shields.io/badge/Forescout-Sales_Accreditation-0284c7?style=for-the-badge" alt="Forescout Sales Accreditation badge">
-                            <span>Issued Dec 2022</span>
-                        </div>
-                        <div class="flex flex-wrap items-center gap-3">
-                            <img src="https://img.shields.io/badge/Network_Masters-CCNA-1d4ed8?style=for-the-badge" alt="CCNA badge">
-                            <span>Issued Oct 2022</span>
-                        </div>
-                        <div class="flex flex-wrap items-center gap-3">
-                            <img src="https://img.shields.io/badge/Fortinet-NSE_3-0ea5e9?style=for-the-badge" alt="Fortinet Network Security Associate Level 3 badge">
-                            <span>Issued Jul 2022 · Expired Jul 2024</span>
-                        </div>
-                        <div class="flex flex-wrap items-center gap-3">
-                            <img src="https://img.shields.io/badge/Nozomi-Networks_Technical_Sales-7c3aed?style=for-the-badge" alt="Nozomi Networks Certified Technical Sales Professional badge">
-                            <span>Issued Jun 2022 · Expired Jun 2023</span>
-                        </div>
-                        <div class="flex flex-wrap items-center gap-3">
-                            <img src="https://img.shields.io/badge/Siemens-SIMATIC_PCS_7_DCS-2563eb?style=for-the-badge" alt="Siemens SIMATIC PCS 7 DCS badge">
-                            <span>Issued Jan 2019</span>
-                        </div>
-                        <div class="flex flex-wrap items-center gap-3">
-                            <img src="https://img.shields.io/badge/Siemens-SIMATIC_S7--1500_STEP7_V14-2563eb?style=for-the-badge" alt="Siemens SIMATIC S7-1500 STEP7 V14 badge">
-                            <span>Issued Aug 2018</span>
-                        </div>
-                    </div>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 text-center hover:border-purple-500/50 transition">
+                    <img src="badges/62443 Fundamantal specialist.png" alt="IEC 62443" class="h-24 md:h-32 mx-auto mb-4">
+                    <div class="text-xs md:text-sm text-gray-300">ISA/IEC 62443 Fundamentals Specialist</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 text-center hover:border-purple-500/50 transition">
+                    <img src="badges/62443 risk assessment specialist.png" alt="Risk" class="h-24 md:h-32 mx-auto mb-4">
+                    <div class="text-xs md:text-sm text-gray-300">ISA/IEC 62443 Risk Assessment Specialist</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 text-center hover:border-purple-500/50 transition">
+                    <img src="badges/CEH.png" alt="CEH" class="h-24 md:h-32 mx-auto mb-4">
+                    <div class="text-xs md:text-sm text-gray-300">Certified Ethical Hacker</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 text-center hover:border-purple-500/50 transition">
+                    <img src="badges/azure-security-engineer-associate.png" alt="Azure" class="h-24 md:h-32 mx-auto mb-4">
+                    <div class="text-xs md:text-sm text-gray-300">Microsoft Azure Security Engineer</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 text-center hover:border-purple-500/50 transition">
+                    <img src="badges/Claroty implemetation engineer.png" alt="Claroty" class="h-24 md:h-32 mx-auto mb-4">
+                    <div class="text-xs md:text-sm text-gray-300">Claroty Implementation Engineer</div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6">
+                    <div class="text-purple-400 font-bold mb-3">OT/ICS Security</div>
+                    <div class="text-sm text-gray-300">Cyber-Physical System Security, ICS Architecture</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6">
+                    <div class="text-blue-400 font-bold mb-3">Standards & Governance</div>
+                    <div class="text-sm text-gray-300">IEC 62443, Risk Assessment, Security Audits</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6">
+                    <div class="text-purple-400 font-bold mb-3">Security Architecture</div>
+                    <div class="text-sm text-gray-300">Network Segmentation, Defense-in-Depth</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6">
+                    <div class="text-blue-400 font-bold mb-3">Industrial Protocols</div>
+                    <div class="text-sm text-gray-300">Modbus, DNP3, IEC 61850, PROFINET</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6">
+                    <div class="text-purple-400 font-bold mb-3">Threat Modeling</div>
+                    <div class="text-sm text-gray-300">STRIDE for ICS, Attack Path Analysis</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6">
+                    <div class="text-blue-400 font-bold mb-3">Security Validation</div>
+                    <div class="text-sm text-gray-300">Adversary simulation (authorized environments), security validation</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-24 bg-slate-50 px-6">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center">Featured Project</h2>
-            <div class="bg-white border border-slate-100 rounded-3xl p-10 shadow-sm">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-2">Virtual Substation (IEC 61850 GOOSE)</h3>
-                        <p class="text-slate-500">Open-source educational project for OT security research.</p>
+    <section id="projects" class="py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 gradient-text">Featured Project</h2>
+            <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 hover:border-purple-500/50 transition">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/5 border border-white/10 text-purple-300" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M32 6 L22 58"></path>
+                                <path d="M32 6 L42 58"></path>
+                                <path d="M20 58 H44"></path>
+                                <path d="M16 20 H48"></path>
+                                <path d="M18 28 H46"></path>
+                                <path d="M22 38 H42"></path>
+                                <path d="M24 48 H40"></path>
+                                <path d="M26 22 L38 34"></path>
+                                <path d="M38 22 L26 34"></path>
+                                <path d="M28 36 L36 44"></path>
+                                <path d="M36 36 L28 44"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl md:text-3xl font-bold mb-2">Virtual Substation (IEC 61850 GOOSE)</h3>
+                            <p class="text-gray-300">Personal, educational, non-commercial project for OT security research</p>
+                        </div>
                     </div>
-                    <a href="https://lnkd.in/gCv3iRyT" class="text-sky-600 font-medium hover:text-sky-700">View repository →</a>
+                    <a href="https://lnkd.in/gCv3iRyT" class="text-purple-400 font-semibold hover:text-purple-300">View Repository →</a>
                 </div>
-                <ul class="mt-6 text-slate-600 list-disc list-inside space-y-2">
-                    <li>Simulates GOOSE messaging between Protection IED and Breaker IED with libIEC61850.</li>
-                    <li>Includes Python GUI, configurable fault logic, and live analog measurements.</li>
-                    <li>Designed for students, researchers, and OT security teams to experiment safely.</li>
+                <ul class="text-gray-300 space-y-2 text-sm md:text-base">
+                    <li>→ Simulates GOOSE messaging between Protection IED and Breaker IED</li>
+                    <li>→ Includes Python GUI, configurable fault logic, and live measurements</li>
+                    <li>→ Designed for students, researchers, and OT security teams</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section id="writing" class="py-24 bg-white px-6">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center">Writing on Medium</h2>
+    <section id="writing" class="py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 gradient-text">Writing</h2>
             <div class="grid md:grid-cols-3 gap-6">
-                <article class="bg-slate-50 border border-slate-100 rounded-3xl p-6">
-                    <p class="text-xs uppercase tracking-wide text-slate-400 mb-2">Jul 12, 2025</p>
-                    <h3 class="text-lg font-semibold mb-3">Beyond the Buzzwords: What Really Happens When OT Security Fails</h3>
-                    <p class="text-slate-500 text-sm">Exploring the real-world consequences of OT security failures in critical systems.</p>
-                    <a href="https://medium.com/@pavithran_ganesan/beyond-the-buzzwords-what-really-happens-when-ot-security-fails" class="mt-4 inline-flex items-center text-sky-600 text-sm font-medium hover:text-sky-700">Read article →</a>
+                <article class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition">
+                    <div class="text-purple-400 text-xs font-semibold mb-3">JUL 12, 2025</div>
+                    <h3 class="text-lg font-bold mb-3">Beyond the Buzzwords: What Really Happens When OT Security Fails</h3>
+                    <p class="text-gray-300 text-sm mb-4">Exploring the real-world consequences of OT security failures.</p>
+                    <a href="https://medium.com/@pavithran_ganesan/beyond-the-buzzwords-what-really-happens-when-ot-security-fails" class="text-purple-400 text-sm font-semibold hover:text-purple-300">Read article →</a>
                 </article>
-                <article class="bg-slate-50 border border-slate-100 rounded-3xl p-6">
-                    <p class="text-xs uppercase tracking-wide text-slate-400 mb-2">Apr 19, 2025</p>
-                    <h3 class="text-lg font-semibold mb-3">Beginner’s Guide to OT Network Scanning with Nmap</h3>
-                    <p class="text-slate-500 text-sm">A practical introduction to safe OT network scanning techniques.</p>
-                    <a href="https://medium.com/@pavithran_ganesan/beginners-guide-to-ot-network-scanning-with-nmap" class="mt-4 inline-flex items-center text-sky-600 text-sm font-medium hover:text-sky-700">Read article →</a>
+                <article class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition">
+                    <div class="text-purple-400 text-xs font-semibold mb-3">APR 19, 2025</div>
+                    <h3 class="text-lg font-bold mb-3">Beginner's Guide to OT Network Scanning with Nmap</h3>
+                    <p class="text-gray-300 text-sm mb-4">A practical introduction to safe OT network scanning.</p>
+                    <a href="https://medium.com/@pavithran_ganesan/beginners-guide-to-ot-network-scanning-with-nmap" class="text-purple-400 text-sm font-semibold hover:text-purple-300">Read article →</a>
                 </article>
-                <article class="bg-slate-50 border border-slate-100 rounded-3xl p-6">
-                    <p class="text-xs uppercase tracking-wide text-slate-400 mb-2">Feb 12, 2025</p>
-                    <h3 class="text-lg font-semibold mb-3">🔐 Building a Secure File Server for OT Labs</h3>
-                    <p class="text-slate-500 text-sm">Steps to build a secure file server for OT environments and lab setups.</p>
-                    <a href="https://medium.com/@pavithran_ganesan/building-a-secure-file-server-for-ot-labs" class="mt-4 inline-flex items-center text-sky-600 text-sm font-medium hover:text-sky-700">Read article →</a>
+                <article class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition">
+                    <div class="text-purple-400 text-xs font-semibold mb-3">FEB 12, 2025</div>
+                    <h3 class="text-lg font-bold mb-3">Building a Secure File Server for OT Labs</h3>
+                    <p class="text-gray-300 text-sm mb-4">Steps to build a secure file server for OT environments.</p>
+                    <a href="https://medium.com/@pavithran_ganesan/building-a-secure-file-server-for-ot-labs" class="text-purple-400 text-sm font-semibold hover:text-purple-300">Read article →</a>
                 </article>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-24 px-6 text-center bg-slate-50">
-        <div class="max-w-2xl mx-auto">
-            <h2 class="text-3xl font-bold mb-4 text-sky-600">Contact</h2>
-            <p class="text-slate-500 mb-10">Open to cybersecurity consulting, training, and research collaborations.</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <a href="mailto:hello@pavithran.in" class="p-6 bg-white border border-slate-200 rounded-2xl hover:border-sky-300 hover:shadow-md transition">Email Me</a>
-                <a href="https://www.linkedin.com/in/pavithran-ganesan1/" class="p-6 bg-white border border-slate-200 rounded-2xl hover:border-sky-300 hover:shadow-md transition">LinkedIn</a>
-                <a href="https://medium.com/@pavithran_ganesan/" class="p-6 bg-white border border-slate-200 rounded-2xl hover:border-sky-300 hover:shadow-md transition">Medium</a>
-                <a href="https://lnkd.in/gCv3iRyT" class="p-6 bg-white border border-slate-200 rounded-2xl hover:border-sky-300 hover:shadow-md transition">GitHub Project</a>
-            </div>
-            <div class="mt-16 text-slate-400 text-sm italic">
-                &copy; 2026 Pavithran Ganesan — pavithranganesan.in
+    <section id="education" class="py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Education and Foundations</h2>
+            <p class="text-gray-300 text-lg leading-relaxed mb-10 max-w-3xl">
+                My academic background blends cybersecurity with instrumentation and control, grounding my work
+                in both software and physical systems.
+            </p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition">
+                    <div class="text-purple-400 text-sm font-semibold mb-2">Cybersecurity</div>
+                    <div class="text-gray-300 text-sm md:text-base">Master's-level study focused on secure systems and governance.</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition">
+                    <div class="text-blue-400 text-sm font-semibold mb-2">Electronics and Instrumentation</div>
+                    <div class="text-gray-300 text-sm md:text-base">Foundations in sensing, measurement, and industrial systems.</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition">
+                    <div class="text-purple-400 text-sm font-semibold mb-2">Instrumentation and Control</div>
+                    <div class="text-gray-300 text-sm md:text-base">Control engineering fundamentals for real-world operations.</div>
+                </div>
             </div>
         </div>
     </section>
+
+    <section id="contact" class="py-12 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Let's Connect</h2>
+            <p class="text-gray-300 text-lg mb-8">Open to knowledge sharing, public speaking, training, and research collaborations</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="mailto:hello@pavithran.in" class="bg-white/5 backdrop-blur-xl border border-white/10 p-6 rounded-2xl hover:border-purple-500 hover:bg-white/10 transition font-semibold">Email</a>
+                <a href="https://www.linkedin.com/in/pavithran-ganesan1/" class="bg-white/5 backdrop-blur-xl border border-white/10 p-6 rounded-2xl hover:border-purple-500 hover:bg-white/10 transition font-semibold">LinkedIn</a>
+                <a href="https://medium.com/@pavithran_ganesan/" class="bg-white/5 backdrop-blur-xl border border-white/10 p-6 rounded-2xl hover:border-purple-500 hover:bg-white/10 transition font-semibold">Medium</a>
+                <a href="https://lnkd.in/gCv3iRyT" class="bg-white/5 backdrop-blur-xl border border-white/10 p-6 rounded-2xl hover:border-purple-500 hover:bg-white/10 transition font-semibold">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 px-6 border-t border-white/10">
+        <div class="max-w-6xl mx-auto space-y-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-gray-400 text-sm">© 2026 Pavithran Ganesan. All rights reserved.</div>
+                <div class="flex gap-6 text-sm">
+                    <a href="#home" class="text-gray-400 hover:text-purple-400 transition">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-purple-400 transition">About</a>
+                    <a href="#contact" class="text-gray-400 hover:text-purple-400 transition">Contact</a>
+                </div>
+            </div>
+            <p class="text-gray-400 text-xs leading-relaxed max-w-4xl">
+                The views expressed on this website are my own and do not represent my employer, past or present.
+                <br>
+                This site is personal and non-commercial.
+                <br>
+                No confidential, proprietary, or client-specific information is shared.
+            </p>
+            <div class="text-gray-400 text-xs">Last updated: 2026-01-10</div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.getElementById('themeBtn');
+            body.classList.toggle('dark');
+            body.classList.toggle('light');
+            btn.innerHTML = body.classList.contains('light') ? '🌙 Dark' : '☀️ Light';
+        }
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-16');
+            menu.classList.toggle('right-6');
+            menu.classList.toggle('bg-black');
+            menu.classList.toggle('p-6');
+            menu.classList.toggle('rounded-2xl');
+            menu.classList.toggle('border');
+            menu.classList.toggle('border-white/10');
+        }
+    </script>
 
 </body>
 </html>
